@@ -13,5 +13,6 @@ data class ObjectDataFooterSample(
 data class ObjectDataSample(
     val phoneName : String,
     val brandName : String,
-    val categoryName: String
+    val categoryName: String,
+    val phoneImage: String
 ) : MyObjectForRecyclerView()

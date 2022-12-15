@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import fr.krzjeremy.jeremy_krzeczowski.R
 import fr.krzjeremy.jeremy_krzeczowski.databinding.ItemCustomRecyclerBinding
 import fr.krzjeremy.jeremy_krzeczowski.databinding.ItemCustomRecyclerFooterBinding
 import fr.krzjeremy.jeremy_krzeczowski.databinding.ItemCustomRecyclerHeaderBinding
@@ -24,7 +26,7 @@ private val diffItemUtils = object : DiffUtil.ItemCallback<MyObjectForRecyclerVi
     }
 }
 
-class AndroidVersionAdapter( private val onItemClick: (quoteUi: ObjectDataSample, view: View) -> Unit,) : ListAdapter<MyObjectForRecyclerView, RecyclerView.ViewHolder>(diffItemUtils) {
+class PhoneAdapter( private val onItemClick: (quoteUi: ObjectDataSample, view: View) -> Unit,) : ListAdapter<MyObjectForRecyclerView, RecyclerView.ViewHolder>(diffItemUtils) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
         when (viewType) {
 
@@ -96,6 +98,10 @@ class AndroidVersionViewHolder(
         ui = objectDataSample
         binding.itemRecyclerViewPhoneName.text = objectDataSample.phoneName
         binding.itemRecyclerViewBrandName.text = objectDataSample.brandName
+        Glide.with(itemView.context)
+            .load(objectDataSample.phoneImage)
+            .placeholder(R.drawable.ic_launcher_background)
+            .into(binding.itemRecyclerViewImage)
     }
 }
 

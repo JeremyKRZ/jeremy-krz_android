@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import fr.krzjeremy.jeremy_krzeczowski.databinding.ActivityMainBinding
+import fr.krzjeremy.jeremy_krzeczowski.pokemon.view.PokemonActivity
 import fr.krzjeremy.jeremy_krzeczowski.view.RecyclerViewActivity
 
 class MainActivity : AppCompatActivity() {
@@ -21,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun generateIntentAndGoTo() {
-        val intent = Intent(this, RecyclerViewActivity::class.java)
+        val intent = Intent(this, PokemonActivity::class.java)
         startActivity(intent)
     }
 }

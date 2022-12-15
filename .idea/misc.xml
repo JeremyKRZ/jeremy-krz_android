@@ -5,10 +5,12 @@
       <map>
         <entry key="..\:/Users/Jeremy KRZ/Desktop/Perso/jeremy_krzeczowski/app/src/main/res/drawable/custom_background.xml" value="0.2703125" />
         <entry key="..\:/Users/Jeremy KRZ/Desktop/Perso/jeremy_krzeczowski/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Jeremy KRZ/Desktop/Perso/jeremy_krzeczowski/app/src/main/res/layout/activity_pokemon.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Jeremy KRZ/Desktop/Perso/jeremy_krzeczowski/app/src/main/res/layout/activity_recycler_view.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Jeremy KRZ/Desktop/Perso/jeremy_krzeczowski/app/src/main/res/layout/item_custom_recycler.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Jeremy KRZ/Desktop/Perso/jeremy_krzeczowski/app/src/main/res/layout/item_custom_recycler_footer.xml" value="0.264" />
         <entry key="..\:/Users/Jeremy KRZ/Desktop/Perso/jeremy_krzeczowski/app/src/main/res/layout/item_custom_recycler_header.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Jeremy KRZ/Desktop/Perso/jeremy_krzeczowski/app/src/main/res/layout/pokemon_item_recycler.xml" value="0.23645833333333333" />
       </map>
     </option>
   </component>
